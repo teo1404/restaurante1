@@ -13,6 +13,27 @@ header{
     height: 70%;
     width: 30%;
     background-color: red;
+    padding: 20px;
+
+    .portada{
+        height: 100%;
+        width: 100%;
+        background-color: aqua;
+        padding: 5px;
+        position: relative;
+        .imagen-resto{
+            height: 100%;
+            width: 100%;
+            background-color: beige;
+        }
+        .saludo{
+            position: absolute;
+            height: 100px;
+            width: 200px;
+            background-color: chocolate;
+        }
+
+    }
 }
 
 main{
