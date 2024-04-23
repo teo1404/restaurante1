@@ -11,7 +11,7 @@ body {
 
 header {
     height: 70%;
-    width: 30%;
+    width: 100%;
     background-color: red;
 
     .portada {
@@ -25,14 +25,20 @@ header {
             height: 100%;
             width: 100%;
             background-color: beige;
+
+             img{
+                height: 100%;
+                width: 100%;
+
+             }
         }
 
-        .saludo {
+       /* .saludo {
             position: absolute;
             height: 100px;
             width: 200px;
             background-color: chocolate;
-        }
+        }*/
 
         .buscador {
             position: absolute;
@@ -41,6 +47,28 @@ header {
             left: 5%;
             background-color: white;
             bottom: -20px;
+            display: flex;
+
+
+            .ubicacion{
+                height: 40px;
+                width: 40px;
+                background-color: red;
+            }
+
+
+
+input[type=search]{
+  height: 40px;
+  width: calc(100% - 80px);    
+}
+
+            input[type=submit]{
+                height: 40px;
+                width: 40px;
+                background-color: red;
+
+            }
         }
 
     }
@@ -48,7 +76,7 @@ header {
     .categoria {
         height: 30%;
         width: 100%;
-        background-color: yellow;
+        background-color: white;
     }
 
 }
