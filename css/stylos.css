@@ -1,38 +1,40 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 
-body{
+body {
     height: 100vh;
 }
 
-header{
+header {
     height: 70%;
     width: 30%;
     background-color: red;
 
-    .portada{
+    .portada {
         height: 70%;
         width: 100%;
         background-color: aqua;
         position: relative;
 
 
-        .imagen-resto{
+        .imagen-resto {
             height: 100%;
             width: 100%;
             background-color: beige;
         }
-        .saludo{
+
+        .saludo {
             position: absolute;
             height: 100px;
             width: 200px;
             background-color: chocolate;
         }
-        .buscador{
+
+        .buscador {
             position: absolute;
             height: 40px;
             width: 90%;
@@ -42,43 +44,61 @@ header{
         }
 
     }
-    .categoria{
+
+    .categoria {
         height: 30%;
         width: 100%;
         background-color: yellow;
     }
-   
+
 }
 
-main{
+main {
     height: 30% auto;
     width: 100%;
     background-color: red;
     padding: 10px;
-    .resultado{
-       background-color: white;
-       display: flex;
-       flex-direction: column;
-       gap: 20px;
+
+    .resultado {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
 
 
 
 
-       article.resto{
-        height: 100px;
-        width: 100%;
-        background-color: blue;
-        color: white;
-        font-size: 30pt;
-       }  
+        article.resto {
+            height: 100px;
+            width: 100%;
+            background-color: red;
+            color: white;
+            font-size: 30pt;
+        }
 
-    }  
+    }
 
 }
 
-@media (orientation: landscape){
-    main .resultado{
-        background-color: rgb(255, 60, 0);
+@media (orientation: landscape) {
+
+
+    main {
+
+        .resultado {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .resto {
+                /*flex-grow: 0;*/
+                /*flex-shrink: 0;*/
+                /*flex-basis: 50%;*/
+                flex: 0 0 calc(50% - 10px);
+                background-color: yellow;
+            }
+        }
     }
-   
+
+
+
 }
