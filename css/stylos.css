@@ -2,11 +2,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
 body {
     height: 100vh;
+
+}
+/* --- TAMAÑO DE ICONOS ---- */
+.icon_s{
+    font-size: 14pt;
+}
+.icon_m{
+    font-size: 18pt;
+}
+.icon_l{
+    font-size: 26pt;
 }
 
 header {
@@ -24,21 +36,23 @@ header {
         .imagen-resto {
             height: 100%;
             width: 100%;
-            background-color: beige;
+            background-color: aquamarine;
 
-             img{
+            img {
                 height: 100%;
                 width: 100%;
 
-             }
+            }
         }
 
-       /* .saludo {
+        .saludo {
             position: absolute;
+            bottom: 50px;
+            left: 20px;
             height: 100px;
-            width: 200px;
-            background-color: chocolate;
-        }*/
+            width: calc(100% - 40px);
+
+        }
 
         .buscador {
             position: absolute;
@@ -50,7 +64,7 @@ header {
             display: flex;
 
 
-            .ubicacion{
+            .ubicacion {
                 height: 40px;
                 width: 40px;
                 background-color: red;
@@ -58,12 +72,12 @@ header {
 
 
 
-input[type=search]{
-  height: 40px;
-  width: calc(100% - 80px);    
-}
+            input[type=search] {
+                height: 40px;
+                width: calc(100% - 80px);
+            }
 
-            input[type=submit]{
+            input[type=submit] {
                 height: 40px;
                 width: 40px;
                 background-color: red;
@@ -74,9 +88,22 @@ input[type=search]{
     }
 
     .categoria {
-        height: 80%;
+        height: 30%;
         width: 100%;
-        background-color: white;
+        padding: 5%;
+        background-color: rgb(236, 234, 234);
+        padding-top: 40px;
+        display: flex;
+        gap: 90px;
+
+        .items-cat {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+        }
     }
 
 }
@@ -94,14 +121,47 @@ main {
         gap: 20px;
 
 
-
-
         article.resto {
-            height: 100px;
+            height: 200px;
             width: 100%;
             background-color: red;
             color: white;
             font-size: 30pt;
+            position: relative;
+
+            .img-resto {
+                background-color: yellow;
+                height: 100%;
+                width: 50%;
+                position: absolute;
+                left: 0;
+            }
+
+            .desc-resto {
+                background-color: white;
+                height: 100%;
+                width: 60%;
+                position: absolute;
+                right: 0;
+                border-radius: 0 0 0 20px;
+                box-shadow: 0 0 15px -2px black;
+
+            }
+
+            .punto-resto {
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                background-color: aquamarine;
+                font-size: 22px;
+                display: grid;
+                place-items: center;
+                right: -7px;
+                top: -7px;
+                border-radius: 10px 0;
+                box-shadow: 0 0 15px -2px black;
+            }
+
         }
 
     }
