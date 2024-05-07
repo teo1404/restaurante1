@@ -95,6 +95,8 @@ header {
         padding-top: 40px;
         display: flex;
         gap: 90px;
+        overflow: hidden;
+        overflow-x: scroll ;
 
         .items-cat {
             display: flex;
